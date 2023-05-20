@@ -2,9 +2,9 @@
 description: First Steps
 ---
 
-### Sending a  message
+### Calling a  method
 
-The example below sends the ```tick``` message to the ``timer`` object.
+The example below calls the ```tick``` method on the ``timer`` instance.
 
   ```
   timer.tick();
@@ -12,33 +12,32 @@ The example below sends the ```tick``` message to the ``timer`` object.
 
 ### Assigning a result
 
-The example below sends the ```reverse``` message to```myObject``` object and it
-will assign the result to ```myResult```.
+The example below calls the ```reverse``` method on ```myObject``` instance and it will assign the result to ```myResult```.
 
   ```
   myResult = myObject.reverse();
   ```
 
-### Constructing a new object
+### Constructing a new instance
 
 The example below creates an instance of ```MyObject```. 
 
   ```
-  myObject = system.new("MyObject");
+  myObject = new("MyObject");
   ```
 
-### Releasing an existing object
+### Releasing an existing instance
 
 The example below shows how to release an object.
 
   ```
-  system.delete(anObject);
+  delete(anObject);
   ```
 
 ### Defining an object
 
 If you want to reuse your code you might consider wrapping it into an object
-which can be constructed using the new message. The example below shows how
+which can be constructed using the new keyword. The example below shows how
 you would define the object named ```MyObject```.
 
   ```
@@ -48,7 +47,7 @@ you would define the object named ```MyObject```.
 ### Defining a method
 
 An object in and of itself cannot do anything so you will need to define some 
-methods that can accept messages. The example below defines the method for
+methods that can be called. The example below defines a method for
 pushing an item.
 
   ```

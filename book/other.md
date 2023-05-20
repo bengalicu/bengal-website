@@ -7,7 +7,7 @@ description: Other constructs
 The example below mixes Bengal Message with Java code.
 
   ```
-  native goingNative() {
+  native {
     System.out.println("This is Java code");
   }
   ```

@@ -6,7 +6,7 @@ description: Control Flow
 
 ### If then statement
 
-The example below sends the ```isAdmin``` message to ```myObject``` to
+The example below calls the ```isAdmin``` method on ```myObject``` to
 determine if an admin email should be sent.
 
   ```
@@ -17,7 +17,7 @@ determine if an admin email should be sent.
 
 ### If then else statement
 
-The example below sends the ```isAdmin``` message to ```myObject``` to 
+The example below calls the ```isAdmin``` method on ```myObject``` to 
 determine if an admin email or a non-admin email needs to be sent.
 
   ```
@@ -30,9 +30,9 @@ determine if an admin email or a non-admin email needs to be sent.
 
 ### While statement
 
-The example below sends the ```hasMoreItems``` message to ```myObject``` to
+The example below calls the ```hasMoreItems``` method on ```myObject``` to
 determine whether or not it has more items and if it does it goes into the loop
-sending the ```removeItem``` message to ```myObject```.
+calling the ```removeItem``` method on ```myObject```.
 
   ```
   while (myObject.hasMoreItems()) {
@@ -42,9 +42,9 @@ sending the ```removeItem``` message to ```myObject```.
 
 ### Do while statement
 
-The example below sends the ```decrementTime``` message to ```myObject``` and
-then determines whether or not to terminate the loop by sending the
-```isMoreThanOneYearOld``` message to ```myObject```.
+The example below calls the ```decrementTime``` method on ```myObject``` and
+then determines whether or not to terminate the loop by calling the
+```isMoreThanOneYearOld``` method on ```myObject```.
 
   ```
   do {
@@ -55,10 +55,10 @@ then determines whether or not to terminate the loop by sending the
 ### For statement
 
 The example below first initializes ```i```. And then for every iteration of
-the loop it determines if the loop needs to be entered by sending the 
-```isLessThan``` message to ```i``` and if it must be entered it sends the
-the ```tick``` message to ```myObject```. And it completes the iteration by
-sending the ```incrementOne``` message to ```i```. If the loop must not be
+the loop it determines if the loop needs to be entered by calling the 
+```isLessThan``` method on ```i``` and if it must be entered it calls the
+the ```tick``` method on ```myObject```. And it completes the iteration by
+calling the ```incrementOne``` method on ```i```. If the loop must not be
 entered it continues with any statement past the for statement. 
 
   ```
@@ -66,5 +66,3 @@ entered it continues with any statement past the for statement.
     myObject.tick();
   }
   ```
-
-

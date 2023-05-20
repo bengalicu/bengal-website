@@ -1,9 +1,7 @@
 ---
-description: Bengal Message
+description: Bengal
 ---
 
 ## Introduction
 
-Bengal Message is a language that uses messages to implement functionality. Any
-object can be sent a message and it can either choose to react on it or to 
-completely ignore it.
+Bengal is a language that uses object and methods on objects to implement functionality. You can call methods on instances to have things happen.
