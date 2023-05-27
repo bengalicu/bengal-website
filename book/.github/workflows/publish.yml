@@ -7,8 +7,6 @@ jobs:
         steps:
         - name: Checkout Sources
           uses: actions/checkout@v3
-          with:
-            token: ${{ secrets.GIT_TOKEN }}
         - name: Build with honkit and publish to Bengal website
           run: |
             npm install honkit
@@ -18,9 +16,12 @@ jobs:
             cd bengal-website
             rm -rf book
             mv ../_book book
+            rm -rf .devcontainer
+            rm -rf .github
+            rm -rf .gitignore
             git config --global user.email "noreply@bengal.icu"
             git config --global user.name "Automated publish"
             git add .
-            git commit -a -m "Publishing Bengal Book"
+            git commit -a -m "Automated publishing, see https://github.com/bengalicu/bengal-book"
             git push
     
