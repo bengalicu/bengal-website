@@ -1,6 +1,6 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
-	"name": "Bengal Website project",
+	"name": "Bengal Book project",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
